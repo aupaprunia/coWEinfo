@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="dashboard_patient.css">
+        <link rel="icon" href="img/information.png" type="image/gif" sizes="16x16">
+
+    </head>
+	<body >
+        <div class="sidebar">
+          <div class="sidebar-brand" style="margin-bottom: 40px;">
+            <h2><span><img src="img/information.png" width="50px" height="50px" alt=""></span>coWE info</h2>
+          </div>
+          <div class="sidebar-menu">
+            <ul>
+              <li>
+                <a href="" class= "active"><span class= "icon to be added"></span>
+                  <span><span><img src="img/hospital-bed.png" width="35px" height="35px" alt=""></span><b>Bed Availability</b></span></a>
+                </li>
+                <li>
+                  <a href="covid_stats.html" ><span class= "icon to be added"></span>
+                    <span><span><img src="img/statistics.png" width="35px" height="35px" alt=""></span><b>Covid Stats</b></span></a>
+                  </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-content">
+          <header>
+            <h2>
+              <label for="">
+                <span class= "icon to be added"></span>
+              </label>
+              Patient Dashboard
+              </h2><span><p><b><div class="form-group" style="margin-top: 10px;">
+                <label for="city"><b>City </b></label>
+                <select name="city" id="city" class="form-control" onchange="onCitySelect()">
+                    <option value ="none">--Select--</option>
+                    <option value="pune">Pune</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="ahemdabad">Ahemdabad</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="kolkata">Kolkata</option>
+                    <option value="hyderabad">Hyderabad</option>
+                </select>
+                <!-- <button onclick=""></button> -->
+            </div> </p><p id = "latest_time"></b><p></p></span>
+              <div class="user-wrapper">
+                
+                <div>
+                  <button class="logout" onclick="logout()">Logout</button>
+                </div>
+              </div>
+          </header>
+
+          <main>
+          <h4>Status of Hospitals</h4><br>
+
+            <div class="cards" id="cards">
+
+              <!-- <div class="card-single"> -->
+                <!-- <div> 
+                  <h1><span id = "Accelerometer" style="color: black;"></span></h1>
+                  <span>Accelerometer</span>
+                </div>
+                <div>
+                  <span class="icon to be added"></span>
+                </div>
+              </div>
+
+            <div class="card-single">
+              <div>
+                <h1><span id = "Flex" style="color: black;"></span></h1>
+                <span>Flex(in degrees)</span>
+              </div>
+              <div>
+                <span class="icon to be added"></span>
+              </div>
+            </div>
+
+            <div class="card-single">
+              <div>
+                <h1><span id= "RE" style="color: black;"></span></h1>
+                <span>RE Readings</span>
+              </div>
+              <div>
+                <span class="icon to be added"></span>
+              </div>
+            </div> -->
+
+            
+            
+          </main>
+        </div>
+        <script src = "dashboard_patient.js"></script>
+	</body>
+</html>

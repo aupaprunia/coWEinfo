@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="dashboard_admin.css">
+        <link rel="icon" href="img/information.png" type="image/gif" sizes="16x16">
+
+    </head>
+	<body >
+        <div class="sidebar">
+          <div class="sidebar-brand">
+            <h2><span><img src="img/information.png" width="50px" height="50px" alt="" style="margin-top: 10px;"></span>UpWind</h2>
+          </div>
+          <div class="sidebar-menu">
+            <ul>
+              <li>
+                <a href="" class= "active"><span class= "icon to be added"></span>
+                  <span><span><img src="img/hospital-bed.png" width="35px" height="35px" alt=""></span><b> Bed Availability</b></span></a>
+                </li>
+                <li>
+                  <a href="covid_stats.html" ><span class= "icon to be added"></span>
+                    <span><span><img src="img/statistics.png" width="35px" height="35px" alt=""></span><b>Covid Stats</b></span></a>
+                  </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-content">
+          <header>
+            <h2>
+              <label for="">
+                <span class= "icon to be added"></span>
+              </label>
+              Admin Panel
+              </h2><span><p><b></p><p id = "latest_time"></b><p></p></span>
+              <div class="user-wrapper">
+                
+                <div>
+                  <button class="logout" onclick="logout()">Logout</button>
+                </div>
+              </div>
+          </header>
+
+          <main>
+            <h4>Your Hospital</h4>
+            <div class="cards" id="cards">
+              <!-- <div class="card-single"> -->
+                <!-- <div> 
+                  <h1><span id = "Accelerometer" style="color: black;"></span></h1>
+                  <span>Accelerometer</span>
+                </div>
+                <div>
+                  <span class="icon to be added"></span>
+                </div>
+              </div>
+
+            <div class="card-single">
+              <div>
+                <h1><span id = "Flex" style="color: black;"></span></h1>
+                <span>Flex(in degrees)</span>
+              </div>
+              <div>
+                <span class="icon to be added"></span>
+              </div>
+            </div>
+
+            <div class="card-single">
+              <div>
+                <h1><span id= "RE" style="color: black;"></span></h1>
+                <span>RE Readings</span>
+              </div>
+              <div>
+                <span class="icon to be added"></span>
+              </div>
+            </div> -->
+            
+            <div class="card-single">
+              <div>
+                <p id = "Activity"><span></span></p>
+                <span  class="self_hospital"><h2 id = "hospital-name">Noble Hospital</h2><br>
+                <p id = "admin-name">Aditya</p>
+                <p id="address">Address</p>
+                <p id="email">email@mail.com</p>
+                <p id="phn-num">0987654321</p>
+                </span>
+              </div>
+
+              <div class="wrapper-beds">
+
+                <div class="form-group">
+                  <label for=""><b>Available Covid Beds:</b></label>
+                  <input type="number" class="form-control" id = "covid-beds" required>
+                </div>
+                <br>
+                <div class="form-group">
+                  <label for=""><b>Available Non-Covid Beds:</b></label>
+                  <input type="number" class="form-control" id="non-covid-beds" required><br>
+                  <button value="update" class="" onclick="update_func()"><b>Update</b></button>
+                </div>
+
+              </div>
+            </div>
+            <br><h4>Status of other Hospitals in your City</h4><br>
+            
+          </main>
+        </div>
+        <script src = "dashboard_admin.js"></script>
+	</body>
+</html>

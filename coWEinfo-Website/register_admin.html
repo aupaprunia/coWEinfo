@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8" />
+        <meta name= "viewport" content="width= device-width ,initial-scale=1.0">
+        <title>Admin Registration</title>
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel="stylesheet" href="register_admin.css">
+        <link rel="icon" href="img/information.png" type="image/gif" sizes="16x16">
+
+    </head>
+	<body>
+        <div class="logo_piece">
+        <img src="img/information_1.png" alt="image">
+        <h2>coWEinfo</h2>
+        </div>
+        <div class="container">
+            <form id="MyForm" action="#" >
+                <h1><img src="calm.png" alt="">Admin Registration</h1>
+
+                <div class="form-group">
+                    <label for=""><b>Hospital Name</b></label>
+                    <input type="text" class="form-control" id="hospital_name"  required>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><b>Admin Name</b></label>
+                    <input type="text" class="form-control" id="admin_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><b>Address</b></label>
+                    <input type="text" class="form-control" id="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city"><b>City</b></label>
+                    <select name="city" id="city" class="form-control">
+                        <option>--Select--</option>
+                        <option value="pune">Pune</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="ahemdabad">Ahemdabad</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="hyderabad">Hyderabad</option>
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+                    <label for=""><b>Pin Code</b></label>
+                    <input type="text" class="form-control" id="pincode" required>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><b>Phone Number</b></label>
+                    <input type="text" class="form-control" id="phn_num" required>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><b>Email ID</b></label>
+                    <input type="text" class="form-control" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><b>Do you have Covid Testing?</b></label>
+                    <input type="radio" class="form-control" name="testing" value="Yes" id="yes_testing" required >Yes</input>
+                    <input type="radio" class="form-control" name="testing" value="No" id="no_testing" required>No</input>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <label for=""><b>Do you provide vaccination?</b></label>
+                    <input type="radio" class="form-control" name="vaccine" value="Yes" id="yes_vaccine" required>Yes</input>
+                    <input type="radio" class="form-control" name="vaccine" value="No" id="no_vaccine" required>No</input>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><b>Total Beds</b></label>
+                    <input type="number" class="form-control" id="total_beds" required>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><b>Current available Covid Beds</b></label>
+                    <input type="number" class="form-control" id="covid_beds" required>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><b>Current available Non-Covid Beds</b></label>
+                    <input type="number" class="form-control" id="non_covid_beds" required>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><b>Password</b></label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><b>Confirm Password</b></label>
+                    <input type="password" class="form-control" id="confirm_password" required>
+                </div>
+            </form>
+                <button type = "button" class="btn login_btn" style="margin-top: 20px; height: 50px; font-weight: bold;" id="register_btn" onclick = "func()" >Register</button>
+        </div>
+        <script src="register_admin.js">
+        </script> 
+    </body>
+    </html>

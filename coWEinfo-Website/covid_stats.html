@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="covid_stats.css">
+        <link rel="icon" href="img/information.png" type="image/gif" sizes="16x16">
+
+    </head>
+	<body >
+        <div class="sidebar">
+          <div class="sidebar-brand" style="margin-bottom: 40px;">
+            <h2><span><img src="img/information.png" width="50px" height="50px" alt=""></span>coWE info</h2>
+          </div>
+          <div class="sidebar-menu">
+            <ul>
+              <li>
+                <a href="javascript:history.back()"><span class= "icon to be added"></span>
+                  <span><span><img src="img/hospital-bed.png" width="35px" height="35px" alt=""></span><b>Bed Availability</b></span></a>
+                </li>
+                <li>
+                  <a href="covid_stats.html" class="active"><span class= "icon to be added"></span>
+                    <span><span><img src="img/statistics.png" width="35px" height="35px" alt=""></span><b>Covid Stats</b></span></a>
+                  </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-content">
+          <header>
+            <h2>
+              <label for="">
+                <span class= "icon to be added"></span>
+             Covid Stats
+              </h2><span><p><b><div class="form-group" style="margin-top: 10px;">
+            </div> </p><p id = "latest_time"></b><p></p></span>
+              <div class="user-wrapper">
+                
+                <div>
+                  <button class="logout" onclick="logout()">Logout</button>
+                </div>
+              </div>
+          </header>
+
+          <main>
+              <div style="margin-left: 43%;">
+          <h2>India<span><img src="img/india.png" width="35px" height="35px" alt=""></span></h2></div>
+
+            <div class="cards" id="cards">
+
+              <!-- <div class="card-single"> -->
+                <!-- <div> 
+                  <h1><span id = "Accelerometer" style="color: black;"></span></h1>
+                  <span>Accelerometer</span>
+                </div>
+                <div>
+                  <span class="icon to be added"></span>
+                </div>
+              </div>
+
+            <div class="card-single">
+              <div>
+                <h1><span id = "Flex" style="color: black;"></span></h1>
+                <span>Flex(in degrees)</span>
+              </div>
+              <div>
+                <span class="icon to be added"></span>
+              </div>
+            </div>
+
+            <div class="card-single">
+              <div>
+                <h1><span id= "RE" style="color: black;"></span></h1>
+                <span>RE Readings</span>
+              </div>
+              <div>
+                <span class="icon to be added"></span>
+              </div>
+            </div> -->
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Confirmed</th>
+                        <th>Recovered</th>
+                        <th>Deceased</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Today's Cases</td>
+                        <td id="today_confirmed">2,60,895</td>
+                        <td id="today_recovered">1,38,209</td>
+                        <td id="today_deaths" >1,498</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td>Total Cases</td>
+                        <td id="total_confirmed">1,47,82,823</td>
+                        <td id="total_recovered">1,28,05,147</td>
+                        <td id="total_deaths">1,77,173</td>
+                    </tr>
+                    <!-- and so on... -->
+                </tbody>
+            </table>
+            
+            
+          </main>
+        </div>
+        <script src = "covid_stats.js"></script>
+        <!-- <script src = "test2.js"></script> -->
+	</body>
+</html>
